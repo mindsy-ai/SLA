@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Dashboard Design System - Modern Dark Theme with Neon Accents */
+
+@layer base {
+  :root {
+    /* Dark Dashboard Theme */
+    --background: 217 33% 6%;
+    --foreground: 213 31% 91%;
+    
+    --card: 217 33% 8%;
+    --card-foreground: 213 31% 91%;
+    
+    --popover: 217 33% 8%;
+    --popover-foreground: 213 31% 91%;
+    
+    --primary: 142 76% 36%;
+    --primary-foreground: 217 33% 6%;
+    
+    --secondary: 217 33% 12%;
+    --secondary-foreground: 213 31% 91%;
+    
+    --muted: 217 33% 10%;
+    --muted-foreground: 217 11% 65%;
+    
+    --accent: 142 76% 36%;
+    --accent-foreground: 217 33% 6%;
+    
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 213 31% 91%;
+    
+    --border: 217 33% 15%;
+    --input: 217 33% 12%;
+    --ring: 142 76% 36%;
+    
+    --radius: 10px;
+    
+    /* Neon Colors */
+    --neon-green: 142 100% 56%;
+    --neon-cyan: 195 100% 56%;
+    --neon-purple: 271 91% 65%;
+    --neon-pink: 330 91% 65%;
+    --neon-orange: 25 95% 53%;
+    
+    /* Chart Colors */
+    --chart-1: 142 100% 56%;
+    --chart-2: 195 100% 56%;
+    --chart-3: 271 91% 65%;
+    --chart-4: 330 91% 65%;
+    --chart-5: 25 95% 53%;
+    
+    /* Gradients */
+    --gradient-neon: linear-gradient(135deg, hsl(var(--neon-green)), hsl(var(--neon-cyan)));
+    --gradient-purple: linear-gradient(135deg, hsl(var(--neon-purple)), hsl(var(--neon-pink)));
+    --gradient-card: linear-gradient(135deg, hsl(var(--card)), hsl(217 33% 10%));
+    
+    /* Shadows and Effects */
+    --shadow-neon: 0 0 20px hsl(var(--neon-green) / 0.3);
+    --shadow-card: 0 8px 32px hsl(217 33% 4% / 0.6);
+    --shadow-purple: 0 0 20px hsl(var(--neon-purple) / 0.3);
+    --shadow-cyan: 0 0 20px hsl(var(--neon-cyan) / 0.3);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
